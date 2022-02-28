@@ -21,7 +21,6 @@ RSpec.describe Calculator, type: :model do
       expect(amount.discounted).to eq(30)
       expect(amount.final_total).to eq
     end
-  end
 
     xit "特定商品買2件, 無折扣" do
       expect(amount.discounted).to eq(0)
