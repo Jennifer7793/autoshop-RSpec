@@ -13,4 +13,8 @@ class Order
       @items << OrderIem.new(product_id)
     end
   end
+
+  def total_price
+    items.reduce(0) { |sum, item| sum + item.price }
+  end
 end
